@@ -26,6 +26,5 @@ jobs:
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: "0.80.0"
-      # - run: sudo snap install hugo
       - run: hugo version
       - run: hugo --minify

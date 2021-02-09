@@ -9,8 +9,8 @@ jobs:
   deploy:
     timeout-minutes: 2
     runs-on: ubuntu-18.04
-    container:
-      image: 'ubuntu:18.04'
+    # container:
+    #   image: 'ubuntu:18.04'
     steps:
       - uses: actions/checkout@v2
         with:
@@ -26,5 +26,5 @@ jobs:
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: "0.80.0"
-      # test 5
+      # test 1
       - run: hugo --minify

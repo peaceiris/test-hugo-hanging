@@ -12,8 +12,7 @@ jobs:
     container:
       image: 'ubuntu:18.04'
     steps:
-      - name: Checkout amaki-aria.github.io
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
         with:
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 

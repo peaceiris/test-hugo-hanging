@@ -28,3 +28,4 @@ jobs:
           hugo-version: "0.80.0"
       # test 5
       - run: hugo --minify
+      - run: ulimit -a

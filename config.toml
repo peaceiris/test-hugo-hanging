@@ -1,0 +1,21 @@
+baseURL = ""
+RelativeURLs=true
+languageCode = "zh-cn"
+theme = "yuripages"
+title = "梦之图书馆"
+
+disableKinds = ["taxonomy", "taxonomyTerm"]
+pluralizelisttitles = false
+hasCJKLanguage = true
+
+[params]
+  author = "Yrr0r"
+  description = "Sample"
+  dateFormat = "2006-01-02"
+  footer1 = "Awesome Books"
+  footer2 = ":)"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

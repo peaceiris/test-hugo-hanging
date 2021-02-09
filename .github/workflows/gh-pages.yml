@@ -1,0 +1,25 @@
+name: github pages
+
+on:
+  push:
+    branches:
+      - master  # Set a branch to deploy
+
+jobs:
+  deploy:
+    timeout-minutes: 2
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout amaki-aria.github.io
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Checkout yuripages
+        uses: actions/checkout@v2
+        with:
+          repository: Yrr0r/yuripages
+          path: themes/yuripages
+
+      - run: sudo snap install hugo
+      - run: hugo version

@@ -21,5 +21,10 @@ jobs:
           repository: Yrr0r/yuripages
           path: themes/yuripages
 
+      # - name: Setup Hugo
+      #   uses: peaceiris/actions-hugo@v2
+      #   with:
+      #     hugo-version: "0.80.0"
       - run: sudo snap install hugo
       - run: hugo version
+      - run: hugo --minify
